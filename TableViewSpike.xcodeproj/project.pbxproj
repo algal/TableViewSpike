@@ -13,6 +13,16 @@
 		5E7448261B084A55000C6CE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448251B084A55000C6CE9 /* Images.xcassets */; };
 		5E7448291B084A55000C6CE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448271B084A55000C6CE9 /* LaunchScreen.xib */; };
 		5E7448351B084A55000C6CE9 /* TableViewSpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448341B084A55000C6CE9 /* TableViewSpikeTests.swift */; };
+		5E7448411B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448401B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift */; };
+		5E7448431B0A3757000C6CE9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448421B0A3757000C6CE9 /* Model.swift */; };
+		5E7448451B0A3F38000C6CE9 /* ProgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448441B0A3F38000C6CE9 /* ProgCell.swift */; };
+		5E7448471B0A3F84000C6CE9 /* NibContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448461B0A3F84000C6CE9 /* NibContentView.xib */; };
+		5E74484A1B0A4E21000C6CE9 /* NibContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448491B0A4E21000C6CE9 /* NibContentView.swift */; };
+		5E74484C1B0AB097000C6CE9 /* NibContainingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74484B1B0AB097000C6CE9 /* NibContainingTableViewCell.swift */; };
+		5E7448501B0AB98D000C6CE9 /* NibBasedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E74484F1B0AB98D000C6CE9 /* NibBasedTableViewCell.xib */; };
+		5E7448521B0ABA19000C6CE9 /* NibBasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448511B0ABA19000C6CE9 /* NibBasedTableViewCell.swift */; };
+		5E7448561B0ABD15000C6CE9 /* TableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448551B0ABD15000C6CE9 /* TableViewStoryboard.storyboard */; };
+		5E74485A1B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448591B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		5E74482E1B084A55000C6CE9 /* TableViewSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7448331B084A55000C6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E7448341B084A55000C6CE9 /* TableViewSpikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSpikeTests.swift; sourceTree = "<group>"; };
+		5E7448401B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgTableViewProgCellViewController.swift; sourceTree = "<group>"; };
+		5E7448421B0A3757000C6CE9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5E7448441B0A3F38000C6CE9 /* ProgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgCell.swift; sourceTree = "<group>"; };
+		5E7448461B0A3F84000C6CE9 /* NibContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibContentView.xib; sourceTree = "<group>"; };
+		5E7448491B0A4E21000C6CE9 /* NibContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibContentView.swift; sourceTree = "<group>"; };
+		5E74484B1B0AB097000C6CE9 /* NibContainingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibContainingTableViewCell.swift; sourceTree = "<group>"; };
+		5E74484F1B0AB98D000C6CE9 /* NibBasedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibBasedTableViewCell.xib; sourceTree = "<group>"; };
+		5E7448511B0ABA19000C6CE9 /* NibBasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibBasedTableViewCell.swift; sourceTree = "<group>"; };
+		5E7448551B0ABD15000C6CE9 /* TableViewStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		5E7448591B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +97,15 @@
 		5E74481B1B084A55000C6CE9 /* TableViewSpike */ = {
 			isa = PBXGroup;
 			children = (
+				5E7448421B0A3757000C6CE9 /* Model.swift */,
 				5E74481E1B084A55000C6CE9 /* AppDelegate.swift */,
 				5E7448201B084A55000C6CE9 /* ViewController.swift */,
 				5E7448221B084A55000C6CE9 /* Main.storyboard */,
 				5E7448251B084A55000C6CE9 /* Images.xcassets */,
 				5E7448271B084A55000C6CE9 /* LaunchScreen.xib */,
 				5E74481C1B084A55000C6CE9 /* Supporting Files */,
+				5E7448531B0ABCC6000C6CE9 /* ProgrammaticTableView */,
+				5E7448541B0ABCF1000C6CE9 /* StoryboardTableView */,
 			);
 			path = TableViewSpike;
 			sourceTree = "<group>";
@@ -110,6 +133,53 @@
 				5E7448331B084A55000C6CE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E7448481B0A4E07000C6CE9 /* Cell:programmatic, loading a nib */ = {
+			isa = PBXGroup;
+			children = (
+				5E74484B1B0AB097000C6CE9 /* NibContainingTableViewCell.swift */,
+				5E7448461B0A3F84000C6CE9 /* NibContentView.xib */,
+				5E7448491B0A4E21000C6CE9 /* NibContentView.swift */,
+			);
+			name = "Cell:programmatic, loading a nib";
+			sourceTree = "<group>";
+		};
+		5E74484D1B0AB947000C6CE9 /* Cell:programmatic */ = {
+			isa = PBXGroup;
+			children = (
+				5E7448441B0A3F38000C6CE9 /* ProgCell.swift */,
+			);
+			name = "Cell:programmatic";
+			sourceTree = "<group>";
+		};
+		5E74484E1B0AB968000C6CE9 /* Cell:nib-based */ = {
+			isa = PBXGroup;
+			children = (
+				5E74484F1B0AB98D000C6CE9 /* NibBasedTableViewCell.xib */,
+				5E7448511B0ABA19000C6CE9 /* NibBasedTableViewCell.swift */,
+			);
+			name = "Cell:nib-based";
+			sourceTree = "<group>";
+		};
+		5E7448531B0ABCC6000C6CE9 /* ProgrammaticTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5E7448401B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift */,
+				5E74484D1B0AB947000C6CE9 /* Cell:programmatic */,
+				5E7448481B0A4E07000C6CE9 /* Cell:programmatic, loading a nib */,
+				5E74484E1B0AB968000C6CE9 /* Cell:nib-based */,
+			);
+			name = ProgrammaticTableView;
+			sourceTree = "<group>";
+		};
+		5E7448541B0ABCF1000C6CE9 /* StoryboardTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5E7448551B0ABD15000C6CE9 /* TableViewStoryboard.storyboard */,
+				5E7448591B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift */,
+			);
+			name = StoryboardTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7448241B084A55000C6CE9 /* Main.storyboard in Resources */,
+				5E7448561B0ABD15000C6CE9 /* TableViewStoryboard.storyboard in Resources */,
 				5E7448291B084A55000C6CE9 /* LaunchScreen.xib in Resources */,
+				5E7448471B0A3F84000C6CE9 /* NibContentView.xib in Resources */,
 				5E7448261B084A55000C6CE9 /* Images.xcassets in Resources */,
+				5E7448501B0AB98D000C6CE9 /* NibBasedTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E74485A1B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift in Sources */,
 				5E7448211B084A55000C6CE9 /* ViewController.swift in Sources */,
+				5E7448521B0ABA19000C6CE9 /* NibBasedTableViewCell.swift in Sources */,
+				5E7448451B0A3F38000C6CE9 /* ProgCell.swift in Sources */,
+				5E74484A1B0A4E21000C6CE9 /* NibContentView.swift in Sources */,
+				5E74484C1B0AB097000C6CE9 /* NibContainingTableViewCell.swift in Sources */,
 				5E74481F1B084A55000C6CE9 /* AppDelegate.swift in Sources */,
+				5E7448411B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift in Sources */,
+				5E7448431B0A3757000C6CE9 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +491,7 @@
 				5E74483A1B084A55000C6CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E74483B1B084A55000C6CE9 /* Build configuration list for PBXNativeTarget "TableViewSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +500,7 @@
 				5E74483D1B084A55000C6CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
