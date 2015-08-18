@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TableViewSpike/ProgCell.swift"
-            timestampString = "461547338.514919"
+            timestampString = "461566435.557932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "layoutSubviews()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TableViewSpike/ProgCell.swift"
-            timestampString = "461547338.514919"
+            timestampString = "461566435.557932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "systemLayoutSizeFittingSize(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TableViewSpike/ProgCell.swift"
-            timestampString = "461547338.514919"
+            timestampString = "461566512.516918"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "systemLayoutSizeFittingSize(_:withHorizontalFittingPriority:verticalFittingPriority:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TableViewSpike/ProgCell.swift"
-            timestampString = "461547338.514919"
+            timestampString = "461566512.516918"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "configureWithItem(body:)"
             landmarkType = "5">
          </BreakpointContent>
