@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3D4F4C03-0C24-4BB6-BAF2-97FFC2024C38</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TableViewSpike</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BA5B3FD2D95DE3DF30DDE506D11ADF68B44DFF3D</key>
 		<string>github.com:algal/TableViewSpike.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TableViewSpike.xcodeproj/project.xcworkspace</string>
+	<string>TableViewSpike.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BA5B3FD2D95DE3DF30DDE506D11ADF68B44DFF3D</key>

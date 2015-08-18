@@ -226,6 +226,7 @@
 		5E7448111B084A55000C6CE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Bloom Filter";
 				TargetAttributes = {
