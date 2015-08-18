@@ -53,16 +53,26 @@ desired width, before setting `preferredMaxLayoutWidth` based on that,
 and then another pass to perform real layout once
 `preferredMaxLayoutWidth` has been set correctly. But this necessity
 is a problem with auto layout and wrapping in the general case, which
-collection views represent, not self-sizing table view cells.
+collection views represent, not the special case of self-sizing table
+view cells, where width is known and only height needs to be
+calculated.
 
 Or, if you are laying out a cell with multiple labels stacked on top
 of each other vertically, then you _may_ need to tweak
 compression-resistance priorities so that Auto Layout knows which
-label should to take the hit when there's not enough space for both of
+label should take the hit when there's not enough space for both of
 them to assume their `intrinsicContentSize`. I am not sure. But again,
-this seems like a generic issue with specifying auto layout behavior
+this seems like a issue general to specifying auto layout behavior
 when there are multiple views at play, not a problem with self-sizing
 table view cells.
+
+### UIView-Encapsulated-Layout-Height
+
+This example project also includes a discussion in comments, and some
+configurable code, for exploring why `UITableView`s with self-sizing
+rows sometimes start up by displaying spurious console warnings about
+being unable to satisfy constraints that include
+UIView-Encapsulated-Layout-Height.
 
 ### Other Resources
 
