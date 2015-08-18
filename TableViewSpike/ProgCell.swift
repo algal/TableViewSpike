@@ -54,11 +54,13 @@ class ProgCell : UITableViewCell
     Due to the Notorious "UIView-Encapsulated-Layout-Height" Constraint
 
     The constraints below allow you to configure the cell to add an additional requirement of
-    a minimum height of 50, to cell, its contentview, or the label. As a result, if you activate
-    any of these, then the cell's constraints become incompatible with any _additional_
-    constraint requiring the cell height to be smaller than 50, such as for it to be 44.
+    a minimum height of 50, to cell, its contentview, or the label. This is in order to simulate
+    the behavior of other cell designs, which have a height greater than 44 on initialization.
     
-    Why is this interesting? When a UITableView using auto-sizing logic first runs, it initializes
+    Why is this interesting? It is interesting because such cells will sometimes start out
+    in conflict with temporary UIKit constraints that set the cell to the default height of 44.
+    
+    When a UITableView using auto-sizing logic first runs, it initializes
     the cell, calls `tableView(_:cellForRowAtIndexPath:)` in order to populate the cell with content, 
     and then calls the cell's 
     `systemLayoutSizeFittingSize(:withHorizontalFittingPriority:verticalFittingPriority:)`
@@ -80,12 +82,11 @@ class ProgCell : UITableViewCell
 
     So what?
     
-    To avoid seeing these spurious error messages, you should configure your cell's constraints so 
-    that they are compatible with it having a required height of 44. For instance, you could reduce 
+    To avoid seeing these spurious warnings messages, you should configure your cell's constraints
+    so that they are compatible with it having a required height of 44. For instance, you could reduce
     to 999 the priority of the spacer constraint connecting the bottom of the contentView to your 
-    bottom-most subview within the contentView. This makes it "legitimate" for your contentView's 
-    subviews to poke out beyond the bottom of your subview, and makes a transient constraint that 
-    contentView.height==44 satisfiable.
+    bottom-most subview within the contentView. This allows that view to poke out beyond the bottom 
+    of your contentView, and makes a transient constraint that contentView.height==44 satisfiable.
     
     The part I don't understand:
     1. How does UIKit decide where to put this spurious, transient constraint?
