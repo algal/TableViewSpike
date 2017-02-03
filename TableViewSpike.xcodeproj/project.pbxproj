@@ -12,7 +12,6 @@
 		5E7448241B084A55000C6CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448221B084A55000C6CE9 /* Main.storyboard */; };
 		5E7448261B084A55000C6CE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448251B084A55000C6CE9 /* Images.xcassets */; };
 		5E7448291B084A55000C6CE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7448271B084A55000C6CE9 /* LaunchScreen.xib */; };
-		5E7448351B084A55000C6CE9 /* TableViewSpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448341B084A55000C6CE9 /* TableViewSpikeTests.swift */; };
 		5E7448411B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448401B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift */; };
 		5E7448431B0A3757000C6CE9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448421B0A3757000C6CE9 /* Model.swift */; };
 		5E7448451B0A3F38000C6CE9 /* ProgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448441B0A3F38000C6CE9 /* ProgCell.swift */; };
@@ -25,16 +24,6 @@
 		5E74485A1B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7448591B0AEC5D000C6CE9 /* StoryboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5E74482F1B084A55000C6CE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E7448111B084A55000C6CE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E7448181B084A55000C6CE9;
-			remoteInfo = TableViewSpike;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		5E7448191B084A55000C6CE9 /* TableViewSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E74481D1B084A55000C6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +32,6 @@
 		5E7448231B084A55000C6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E7448251B084A55000C6CE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E7448281B084A55000C6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5E74482E1B084A55000C6CE9 /* TableViewSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E7448331B084A55000C6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E7448341B084A55000C6CE9 /* TableViewSpikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSpikeTests.swift; sourceTree = "<group>"; };
 		5E7448401B0A36F0000C6CE9 /* ProgTableViewProgCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgTableViewProgCellViewController.swift; sourceTree = "<group>"; };
 		5E7448421B0A3757000C6CE9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5E7448441B0A3F38000C6CE9 /* ProgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgCell.swift; sourceTree = "<group>"; };
@@ -66,13 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E74482B1B084A55000C6CE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				5E74481B1B084A55000C6CE9 /* TableViewSpike */,
-				5E7448311B084A55000C6CE9 /* TableViewSpikeTests */,
 				5E74481A1B084A55000C6CE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				5E7448191B084A55000C6CE9 /* TableViewSpike.app */,
-				5E74482E1B084A55000C6CE9 /* TableViewSpikeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,23 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				5E74481D1B084A55000C6CE9 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5E7448311B084A55000C6CE9 /* TableViewSpikeTests */ = {
-			isa = PBXGroup;
-			children = (
-				5E7448341B084A55000C6CE9 /* TableViewSpikeTests.swift */,
-				5E7448321B084A55000C6CE9 /* Supporting Files */,
-			);
-			path = TableViewSpikeTests;
-			sourceTree = "<group>";
-		};
-		5E7448321B084A55000C6CE9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5E7448331B084A55000C6CE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,24 +162,6 @@
 			productReference = 5E7448191B084A55000C6CE9 /* TableViewSpike.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5E74482D1B084A55000C6CE9 /* TableViewSpikeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E74483B1B084A55000C6CE9 /* Build configuration list for PBXNativeTarget "TableViewSpikeTests" */;
-			buildPhases = (
-				5E74482A1B084A55000C6CE9 /* Sources */,
-				5E74482B1B084A55000C6CE9 /* Frameworks */,
-				5E74482C1B084A55000C6CE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E7448301B084A55000C6CE9 /* PBXTargetDependency */,
-			);
-			name = TableViewSpikeTests;
-			productName = TableViewSpikeTests;
-			productReference = 5E74482E1B084A55000C6CE9 /* TableViewSpikeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,15 +169,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Bloom Filter";
 				TargetAttributes = {
 					5E7448181B084A55000C6CE9 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					5E74482D1B084A55000C6CE9 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 5E7448181B084A55000C6CE9;
+						DevelopmentTeam = W97Z367GJV;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -253,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				5E7448181B084A55000C6CE9 /* TableViewSpike */,
-				5E74482D1B084A55000C6CE9 /* TableViewSpikeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,13 +208,6 @@
 				5E7448471B0A3F84000C6CE9 /* NibContentView.xib in Resources */,
 				5E7448261B084A55000C6CE9 /* Images.xcassets in Resources */,
 				5E7448501B0AB98D000C6CE9 /* NibBasedTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E74482C1B084A55000C6CE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,23 +230,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E74482A1B084A55000C6CE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E7448351B084A55000C6CE9 /* TableViewSpikeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5E7448301B084A55000C6CE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E7448181B084A55000C6CE9 /* TableViewSpike */;
-			targetProxy = 5E74482F1B084A55000C6CE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E7448221B084A55000C6CE9 /* Main.storyboard */ = {
@@ -349,14 +265,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -394,8 +313,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -414,6 +335,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -423,9 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W97Z367GJV;
 				INFOPLIST_FILE = TableViewSpike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bloomfilter.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -433,43 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W97Z367GJV;
 				INFOPLIST_FILE = TableViewSpike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bloomfilter.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5E74483C1B084A55000C6CE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TableViewSpikeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewSpike.app/TableViewSpike";
-			};
-			name = Debug;
-		};
-		5E74483D1B084A55000C6CE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TableViewSpikeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewSpike.app/TableViewSpike";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -490,15 +384,6 @@
 			buildConfigurations = (
 				5E7448391B084A55000C6CE9 /* Debug */,
 				5E74483A1B084A55000C6CE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E74483B1B084A55000C6CE9 /* Build configuration list for PBXNativeTarget "TableViewSpikeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E74483C1B084A55000C6CE9 /* Debug */,
-				5E74483D1B084A55000C6CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

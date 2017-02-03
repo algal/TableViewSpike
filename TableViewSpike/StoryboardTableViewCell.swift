@@ -16,7 +16,7 @@ class StoryboardTableViewCell: UITableViewCell
 
 extension StoryboardTableViewCell : TextableLabel
 {
-  func configureWithItem(#body: String) {
+  func configureWithItem(body: String) {
     self.bodyLabel.text = body
   }
 }

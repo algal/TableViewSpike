@@ -16,7 +16,7 @@
             startingLineNumber = "36"
             endingLineNumber = "36"
             landmarkName = "init(style:reuseIdentifier:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "installNon44PtHeightConstraint(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,7 +48,7 @@
             startingLineNumber = "123"
             endingLineNumber = "123"
             landmarkName = "installNon44PtHeightConstraint(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,7 +64,7 @@
             startingLineNumber = "131"
             endingLineNumber = "131"
             landmarkName = "installNon44PtHeightConstraint(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,7 +80,7 @@
             startingLineNumber = "144"
             endingLineNumber = "144"
             landmarkName = "installNon44PtHeightConstraint(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

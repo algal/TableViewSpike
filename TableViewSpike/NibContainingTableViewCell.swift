@@ -31,18 +31,18 @@ being constraints to that that size_, then you will see complaints.
 
 class NibContainingTableViewCell: UITableViewCell
 {
-  override class func requiresConstraintBasedLayout() -> Bool { return true }
+  override class var requiresConstraintBasedLayout : Bool { return true }
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: UITableViewCellStyle.Default, reuseIdentifier: reuseIdentifier)
+    super.init(style: UITableViewCellStyle.default, reuseIdentifier: reuseIdentifier)
     
-    if let containedNibBasedView = UINib(nibName: "NibContentView", bundle: nil).instantiateWithOwner(nil, options: nil).first as? NibContentView {
+    if let containedNibBasedView = UINib(nibName: "NibContentView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? NibContentView {
       self.contentView.addSubview(containedNibBasedView)
 
-      containedNibBasedView.setTranslatesAutoresizingMaskIntoConstraints(false)
-      ["V:|[v]|","H:|[v]|"].map({
+      containedNibBasedView.translatesAutoresizingMaskIntoConstraints = false
+      let _ = ["V:|[v]|","H:|[v]|"].map({
         (vfl:String) -> (String) in
-        let cs = NSLayoutConstraint.constraintsWithVisualFormat(vfl, options: .allZeros, metrics: nil, views: ["v":containedNibBasedView]) as! [NSLayoutConstraint]
+        let cs = NSLayoutConstraint.constraints(withVisualFormat: vfl, options: [], metrics: nil, views: ["v":containedNibBasedView])
         self.contentView.addConstraints(cs)
         return vfl
         }
@@ -59,7 +59,7 @@ class NibContainingTableViewCell: UITableViewCell
 }
 
 extension NibContainingTableViewCell : TextableLabel {
-  func configureWithItem(#body:String) -> Void {
+  func configureWithItem(body:String) -> Void {
     if let nibContentView:NibContentView = self.contentView.subviews.first as? NibContentView {
       nibContentView.bodyLabel.text = body
     }

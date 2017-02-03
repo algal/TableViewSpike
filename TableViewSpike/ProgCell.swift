@@ -33,20 +33,20 @@ class ProgCell : UITableViewCell
   var bodyLabel:UILabel!
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: UITableViewCellStyle.Default, reuseIdentifier: reuseIdentifier)
+    super.init(style: UITableViewCellStyle.default, reuseIdentifier: reuseIdentifier)
     
-    super.contentView.backgroundColor = UIColor.grayColor()
+    super.contentView.backgroundColor = UIColor.gray
     
     self.bodyLabel = UILabel(frame: self.bounds)
     self.bodyLabel.numberOfLines = 0
-    self.bodyLabel.backgroundColor = UIColor.yellowColor()
+    self.bodyLabel.backgroundColor = UIColor.yellow
     self.contentView.addSubview(bodyLabel)
     
     // AL setup
-    self.bodyLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+    self.bodyLabel.translatesAutoresizingMaskIntoConstraints =  false
     let vfls = ["H:|-15-[bodyLabel]-15-|","V:|-15-[bodyLabel]-15-|"]
     for vfl in vfls {
-      self.contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(vfl, options:NSLayoutFormatOptions.allZeros , metrics: nil, views: ["bodyLabel":self.bodyLabel]))
+      self.contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: vfl, options:[] , metrics: nil, views: ["bodyLabel":self.bodyLabel]))
     }
 
 //    self.installNon44PtHeightConstraint(.Cell)
@@ -56,16 +56,16 @@ class ProgCell : UITableViewCell
     super.layoutSubviews()
   }
   
-  override func systemLayoutSizeFittingSize(targetSize: CGSize) -> CGSize {
-    let result = super.systemLayoutSizeFittingSize(targetSize)
+  override func systemLayoutSizeFitting(_ targetSize: CGSize) -> CGSize {
+    let result = super.systemLayoutSizeFitting(targetSize)
     return result
   }
   
-  override func systemLayoutSizeFittingSize(targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+  override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
 //    NSLog("existing constraints on cell.contentView.label: %@", bodyLabel.constraintsAffectingLayoutForAxis(.Vertical))
 //    NSLog("existing constraints on cell.contentView: %@", self.contentView.constraintsAffectingLayoutForAxis(.Vertical))
 //    NSLog("existing constraints on cell: %@", self.constraintsAffectingLayoutForAxis(.Vertical))
-    let result = super.systemLayoutSizeFittingSize(targetSize, withHorizontalFittingPriority: horizontalFittingPriority, verticalFittingPriority: verticalFittingPriority)
+    let result = super.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalFittingPriority, verticalFittingPriority: verticalFittingPriority)
     
     return result
   }
@@ -75,7 +75,7 @@ class ProgCell : UITableViewCell
   }
   
   enum HeightConstraintLocation {
-    case Cell, ContentView, ContentViewSubview
+    case cell, contentView, contentViewSubview
   }
 
   /** Adds a constraint somewhere in the cell that is incompatible with a height of 44 pt.
@@ -84,7 +84,7 @@ class ProgCell : UITableViewCell
   @discussion This is in order to facilitate exploration of how to workaround some of of UIKit's 
   frustrating built-in system constraints
   */
-  func installNon44PtHeightConstraint(location:HeightConstraintLocation) {
+  func installNon44PtHeightConstraint(_ location:HeightConstraintLocation) {
     /*
     ## Parenthetical Discussion of Constraint Errors
     ## Due to the Notorious "UIView-Encapsulated-Layout-Height" Constraint
@@ -145,26 +145,26 @@ class ProgCell : UITableViewCell
     
 
     */
-    func height50ConstraintOnView(v:UIView) -> NSLayoutConstraint {
-      return NSLayoutConstraint(item: v, attribute: .Height, relatedBy: .GreaterThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 0, constant: 50)
+    func height50ConstraintOnView(_ v:UIView) -> NSLayoutConstraint {
+      return NSLayoutConstraint(item: v, attribute: .height, relatedBy: .greaterThanOrEqual, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: 50)
     }
 
       let heightConstraint:NSLayoutConstraint
       switch location {
-      case .Cell:
+      case .cell:
         heightConstraint = height50ConstraintOnView(self)
-      case .ContentView:
+      case .contentView:
         heightConstraint = height50ConstraintOnView(self.contentView)
-      case .ContentViewSubview:
+      case .contentViewSubview:
         heightConstraint = height50ConstraintOnView(bodyLabel)
       }
-      heightConstraint.active = true
+      heightConstraint.isActive = true
   }
 }
 
 
 extension ProgCell : TextableLabel {
-  func configureWithItem(#body:String) -> Void {
+  func configureWithItem(body:String) -> Void {
     self.bodyLabel.text = body
   }
 }

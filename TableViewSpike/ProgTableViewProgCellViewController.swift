@@ -9,7 +9,7 @@
 import UIKit
 
 protocol TextableLabel {
-  func configureWithItem(#body:String) -> Void
+  func configureWithItem(body:String) -> Void
 }
 
 class ProgTableViewViewController: UITableViewController
@@ -19,22 +19,22 @@ class ProgTableViewViewController: UITableViewController
   let prototypeCellIdentifier:String = "PrototypeCellIdentifier"
   let nonPrototypeCellIdentifier:String = "CellIdentifier"
 
-  var tableViewConfig:TableViewConfiguration = .Programmatic
-  var cellConfig:CellConfiguration = .Programmatic
+  var tableViewConfig:TableViewConfiguration = .programmatic
+  var cellConfig:CellConfiguration = .programmatic
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
     switch cellConfig {
-    case .StoryboardDefined:
+    case .storyboardDefined:
       NSLog("we are not registering a nib or a class in viewDidLoad, on the expectation that the UITableViewController superclass's machinery handles that for the case of a storybaord-defined VC")
       break
-    case .Programmatic:
-          tableView.registerClass(ProgCell.self, forCellReuseIdentifier: nonPrototypeCellIdentifier)
-    case .ProgrammaticContainingNib:
-      tableView.registerClass(NibContainingTableViewCell.self, forCellReuseIdentifier: nonPrototypeCellIdentifier)
-    case .NibDefined:
-      tableView.registerNib(UINib(nibName: "NibBasedTableViewCell", bundle: nil), forCellReuseIdentifier: nonPrototypeCellIdentifier)
+    case .programmatic:
+          tableView.register(ProgCell.self, forCellReuseIdentifier: nonPrototypeCellIdentifier)
+    case .programmaticContainingNib:
+      tableView.register(NibContainingTableViewCell.self, forCellReuseIdentifier: nonPrototypeCellIdentifier)
+    case .nibDefined:
+      tableView.register(UINib(nibName: "NibBasedTableViewCell", bundle: nil), forCellReuseIdentifier: nonPrototypeCellIdentifier)
     }
 
     // enable iOS8 automatic cell height
@@ -42,24 +42,24 @@ class ProgTableViewViewController: UITableViewController
     tableView.estimatedRowHeight = CGFloat(44)
   }
   
-  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  override func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
   
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
   }
   
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
   {
     let identifier:String
     switch cellConfig {
-    case .StoryboardDefined: identifier = prototypeCellIdentifier
+    case .storyboardDefined: identifier = prototypeCellIdentifier
     default: identifier = nonPrototypeCellIdentifier
     }
     
-    if let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as? UITableViewCell,
-      cellx = cell as? TextableLabel
+    let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+    if let cellx = cell as? TextableLabel
     {
       let item = items[indexPath.row]
       cellx.configureWithItem(body:item.body)

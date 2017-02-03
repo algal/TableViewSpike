@@ -27,7 +27,7 @@ class NibBasedTableViewCell: UITableViewCell
 }
 
 extension NibBasedTableViewCell : TextableLabel {
-  func configureWithItem(#body:String) -> Void {
+  func configureWithItem(body:String) -> Void {
     self.bodyLabel.text = body
   }
 }
