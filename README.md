@@ -1,6 +1,8 @@
 Seven Ways to Look at an Auto Layout Self-sizing TableView Cell
 =====================================================================
 
+This repo is known-good for Swift 3, Xcode 8.2.1, iOS 10.2.1
+
 ### Hello, what is this?
 
 This repo shows seven examples of implementing a `UITableView` with
